@@ -1,0 +1,67 @@
+{
+  "_from": "css-utils-margin",
+  "_id": "css-utils-margin@0.1.0",
+  "_inBundle": false,
+  "_integrity": "sha1-L5VRrMOnI6YKlBllgE3uGa+wwi0=",
+  "_location": "/css-utils-margin",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "css-utils-margin",
+    "name": "css-utils-margin",
+    "escapedName": "css-utils-margin",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/css-utils-margin/-/css-utils-margin-0.1.0.tgz",
+  "_shasum": "2f9551acc3a723a60a941965804dee19afb0c22d",
+  "_spec": "css-utils-margin",
+  "_where": "C:\\Users\\Ryan\\workspace\\arthur-page",
+  "author": {
+    "name": "David Calhoun"
+  },
+  "bugs": {
+    "url": "https://github.com/dcalhoun/css-utils-margin/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Immutable, CSS margin utilities.",
+  "devDependencies": {
+    "stylelint-config-suitcss": "^7.0.0",
+    "suitcss-components-test": "*",
+    "suitcss-preprocessor": "^2.0.0"
+  },
+  "homepage": "https://github.com/dcalhoun/css-utils-margin#readme",
+  "keywords": [
+    "css",
+    "utility",
+    "margin",
+    "atomic",
+    "postcss"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "css-utils-margin",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/dcalhoun/css-utils-margin.git"
+  },
+  "scripts": {
+    "build": "npm run setup && npm run preprocess",
+    "build-test": "npm run setup && npm run preprocess-test",
+    "lint": "suitcss -c test/config.json index.css build/lint.css && rm build/lint.css",
+    "preprocess": "suitcss index.css build/build.css",
+    "preprocess-test": "suitcss -i test test/test.css build/test.css",
+    "setup": "npm install",
+    "test": "npm run lint",
+    "watch": "npm run preprocess-test -- -w -v"
+  },
+  "style": "index.css",
+  "version": "0.1.0"
+}
